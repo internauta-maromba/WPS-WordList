@@ -3,7 +3,7 @@ Python Script to make a WPS Pin Wordlist
 
 Some routers use default WPA password as the number of the WPS PIN, and some users just let the default password. Using this script you can make a wordlist to use in aircrack-ng.
 
-#############################################################################################################################
+
 #---Python2
 '''
 Have problems to pins that start with zero, so crunch this way "crunch 7 7 123456789 -o crunch-7-7.txt -d 3% -t @%%%%%%"
@@ -51,4 +51,4 @@ with open('wps2.txt', 'w') as f:
         print >> f, item
 
 #---output wordlist
-#############################################################################################################################
+
