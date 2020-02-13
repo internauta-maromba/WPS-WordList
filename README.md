@@ -5,12 +5,12 @@ Some routers use default WPA password as the number of the WPS PIN, and some use
 
 The ideia in this project is: 
 
-1 - Make a wordlist with crunch without starts with zero, because python cut leading zeros or use to octal math -> "crunch 7 7 123456789 -o crunch-7-7.txt -d 3% -t @%%%%%%"
+1 - Make a wordlist with crunch without starts numbers with zero, because python cut leading zeros or use to octal math -> "crunch 7 7 123456789 -o crunch-7-7.txt -d 3% -t @%%%%%%"
 
 2 - Split crunch-7-7.txt to not freezy the machine -> "split crunch-7-7.txt -n l/2 -d crunch"
 
 3 - Run WPS-script.py in crunch00 and crunch01 to output wps1.txt and wps2.txt"
 
-4 - Opitionaly you can randomize like Bully does -> "sort wps1.txt -R -o wps-rand.txt" "sort wps1.txt -R -o wps-rand2.txt"
+4 - Optionally, randomize like bully -> "sort wps1.txt -R -o wps-rand.txt" and "sort wps1.txt -R -o wps-rand2.txt"
 
-5 - Finaly glue everything -> "cat wps-rand.txt wps-rand2 > wps-wordlist.txt"
+5 - Finaly glue everything -> "cat wps-rand.txt wps-rand2 > wps-wordlist.txt
